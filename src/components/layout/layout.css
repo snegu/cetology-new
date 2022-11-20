@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Herr+Von+Muellerhoff&display=swap');
+
+
+body {
+  font-family: 'Averia Serif Libre', cursive;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 7em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5em;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0
+}
+
+h4 {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 3em;
+  margin: 0 0 -20px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: #165AA3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.footer a, .header a {
+  color: white;
+}
+
+
+button {
+  margin-top: 1em;
+  padding: 1.25em 1.5em;
+  background-color: rgba(0, 0, 0, .05);
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Averia Serif Libre', cursive;
+  border: 1px solid rgba(0, 0, 0, .20);
+}
+
+button:hover {
+  background-color: rgb(42, 59, 77);
+  color: white;
+  cursor: pointer;
+}
+
+.WhaleList {
+  margin: -30px 0 0 0;
+  background: linear-gradient(180deg, #DFF1F5 0%, #91C6D1 100%);
+  padding: 1em 5em 5em 5em;
+}
+
+.whale {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, .0);
+  text-align: center;
+  height: 100%;
+}
+
+
+.whale:hover {
+  background-color: rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .10);
+  cursor: pointer;
+}
+
+.whale img {
+  width: 100%;
+}
+
+.whale .whaleImage {
+  height: 273px;
+  display: grid;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.OctavoGroup, .DuoGroup, .FolioGroup {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: stretch;
+  justify-items: center;
+  margin-bottom: 20px;
+  column-gap: 80px;
+  row-gap: 40px;
+}
+
+
+
+
+@media (min-width: 1100px) {
+
+  .FolioGroup {
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0px;
+  }
+  
+  .FolioGroup .whale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 3em 1em;
+  }
+  
+  .FolioGroup .whale .whaleImage {
+    width: 75%;
+    height: 100%;
+  }
+  
+  .FolioGroup .whale .whaleDescription {
+    padding-left: 40px;
+    width: 25%;
+  }
+
+  .DuoGroup {
+    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: column;
+  }
+
+}
+
+
+@media (max-width: 1400px) {
+  h1 {
+      font-size: 5em;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  h1 {
+      font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+  }
+  
+ .whale .whaleImage {
+    height: 220px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  h1 {
+      font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 1.5em 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    margin: 0 0 0px 0;
+}
+  p {
+  font-size: .9em;
+}
+
+.OctavoGroup, .DuoGroup, .FolioGroup {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  align-items: stretch;
+  justify-items: center;
+  margin-bottom: 0px;
+  row-gap: 40px;
+}
+
+.WhaleList {
+  margin: 0;
+  background-color: #DFF1F5;
+  padding: 3em 1em 2em 1em;
+}
+
+.whale .whaleImage {
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.FolioGroup .whale .whaleImage {
+  margin-bottom: 1em;
+}
+
+
+}
+
